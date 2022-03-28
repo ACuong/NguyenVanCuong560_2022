@@ -12,6 +12,8 @@ namespace NguyenVanCuong2022560.Controllers
     public class NVC0560Controller : Controller
     {
         private readonly ApplicationDBContext _context;
+        StringProcessNVC2022560 StringProcess = new StringProcessNVC2022560(); 
+
 
         public NVC0560Controller(ApplicationDBContext context)
         {
@@ -55,6 +57,8 @@ namespace NguyenVanCuong2022560.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("NVCID,NVCName,NVCGender")] NVC0560 nVC0560)
         {
+            nVC0560.NVCID = StringProcess.UpperToLower(nVC0560.NVCID);
+            nVC0560.NVCName = StringProcess.UpperToLower(nVC0560.NVCName);
             if (ModelState.IsValid)
             {
                 _context.Add(nVC0560);
@@ -87,6 +91,8 @@ namespace NguyenVanCuong2022560.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("NVCID,NVCName,NVCGender")] NVC0560 nVC0560)
         {
+            nVC0560.NVCID = StringProcess.UpperToLower(nVC0560.NVCID);
+            nVC0560.NVCName = StringProcess.UpperToLower(nVC0560.NVCName);
             if (id != nVC0560.NVCID)
             {
                 return NotFound();

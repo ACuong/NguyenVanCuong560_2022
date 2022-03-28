@@ -12,6 +12,7 @@ namespace NguyenVanCuong2022560.Controllers
     public class PersonNVC2022560Controller : Controller
     {
         private readonly ApplicationDBContext _context;
+        StringProcessNVC2022560 StringProcess = new StringProcessNVC2022560(); 
 
         public PersonNVC2022560Controller(ApplicationDBContext context)
         {
@@ -55,6 +56,8 @@ namespace NguyenVanCuong2022560.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("PersonID,PersonName")] PersonNVC2022560 personNVC2022560)
         {
+            personNVC2022560.PersonID = StringProcess.UpperToLower(personNVC2022560.PersonID);
+             personNVC2022560.PersonName = StringProcess.UpperToLower(personNVC2022560.PersonName);
             if (ModelState.IsValid)
             {
                 _context.Add(personNVC2022560);
@@ -91,6 +94,8 @@ namespace NguyenVanCuong2022560.Controllers
             {
                 return NotFound();
             }
+            personNVC2022560.PersonID = StringProcess.UpperToLower(personNVC2022560.PersonID);
+            personNVC2022560.PersonName = StringProcess.UpperToLower(personNVC2022560.PersonName);
 
             if (ModelState.IsValid)
             {
