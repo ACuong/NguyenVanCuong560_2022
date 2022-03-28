@@ -15619,6 +15619,11 @@
   "RootNamespace": "NguyenVanCuong2022560",
   "Documents": [
     {
+      "FilePath": "d:\\HocTap\\MaNguonMoTKT2\\NguyenVanCuong2022560\\Views\\PersonNVC2022560\\Edit.cshtml",
+      "TargetPath": "Views\\PersonNVC2022560\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\HocTap\\MaNguonMoTKT2\\NguyenVanCuong2022560\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -15644,8 +15649,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\HocTap\\MaNguonMoTKT2\\NguyenVanCuong2022560\\Views\\PersonNVC2022560\\Index.cshtml",
+      "TargetPath": "Views\\PersonNVC2022560\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\HocTap\\MaNguonMoTKT2\\NguyenVanCuong2022560\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\HocTap\\MaNguonMoTKT2\\NguyenVanCuong2022560\\Views\\PersonNVC2022560\\Delete.cshtml",
+      "TargetPath": "Views\\PersonNVC2022560\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\HocTap\\MaNguonMoTKT2\\NguyenVanCuong2022560\\Views\\PersonNVC2022560\\Details.cshtml",
+      "TargetPath": "Views\\PersonNVC2022560\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\HocTap\\MaNguonMoTKT2\\NguyenVanCuong2022560\\Views\\PersonNVC2022560\\Create.cshtml",
+      "TargetPath": "Views\\PersonNVC2022560\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
